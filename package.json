@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Mocha's spec reporter with retried test information.",
   "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miherlosev/mocha-reporter-spec-with-retries"
