@@ -6,6 +6,12 @@
   "files": [
     "src"
   ],
+  "keywords": [
+    "mocha",
+    "reporter",
+    "retries",
+    "spec"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miherlosev/mocha-reporter-spec-with-retries"
