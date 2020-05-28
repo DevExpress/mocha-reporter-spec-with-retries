@@ -69,7 +69,7 @@ function SpecWithRetries (runner, options) {
 
         // unstable tests
         if (stats.unstables.length) {
-            fmt = color('bright yellow', 'Unstable(s):');
+            fmt = color('bright yellow', '  Unstable(s):');
 
             Base.consoleLog(fmt);
 
@@ -77,10 +77,10 @@ function SpecWithRetries (runner, options) {
 
             Object.entries(groupedByFile)
                 .forEach(([key, value]) => {
-                    Base.consoleLog(color('bright yellow', '  %s'), key);
+                    Base.consoleLog(color('bright yellow', '    %s'), key);
 
                     value.forEach(unstableTest => {
-                        Base.consoleLog(color('bright yellow', '    %s'), unstableTest.title);
+                        Base.consoleLog(color('bright yellow', '      %s'), unstableTest.title);
                     });
                 });
         }
