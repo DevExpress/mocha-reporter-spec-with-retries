@@ -1,6 +1,6 @@
 {
   "name": "mocha-reporter-spec-with-retries",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mocha's spec reporter with retried test information.",
   "main": "src/index.js",
   "files": [
