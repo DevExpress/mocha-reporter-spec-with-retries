@@ -70,7 +70,7 @@ function SpecWithRetries (runner, options) {
         if (stats.unstables.length) {
             Base.consoleLog();
 
-            fmt = color('bright yellow', '  Unstable tests(s):');
+            fmt = color('bright yellow', '  Unstable test(s):');
 
             Base.consoleLog(fmt);
 
