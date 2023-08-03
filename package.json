@@ -19,11 +19,11 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-eslint": "^5.0.0",
-    "gulp-mocha-simple": "^1.1.0",
+    "gulp-mocha-simple": "^2.0.0",
     "publish-please": "^5.5.1"
   },
   "peerDependencies": {
-    "mocha": "^7.2.0"
+    "mocha": "^10.2.0"
   },
   "engines": {
     "node": ">=10.0.0"
