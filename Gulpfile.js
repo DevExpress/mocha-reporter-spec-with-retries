@@ -22,3 +22,5 @@ gulp.task('preview', () => {
             timeout:  typeof v8debug === 'undefined' ? 2000 : Infinity // NOTE: disable timeouts in debug
         }));
 });
+
+gulp.task('test', gulp.series('lint', 'preview'));

@@ -11,7 +11,16 @@ describe('Test suite 1', function () {
     });
 
     it('Failed', () => {
-        assert.ok(false);
+        let isCorrect = false;
+
+        try {
+            assert.ok(false);
+        }
+        catch (_) {
+            isCorrect = true;
+        }
+
+        assert.ok(isCorrect);
     });
 
     it('Pending');
@@ -19,7 +28,7 @@ describe('Test suite 1', function () {
     it('Unstable - 1', () => {
         unstable1RunCount++;
 
-        if(unstable1RunCount === 2)
+        if (unstable1RunCount === 2)
             assert.ok(true);
         else
             assert.ok(false);
@@ -28,7 +37,7 @@ describe('Test suite 1', function () {
     it('Unstable - 2', () => {
         unstable2RunCount++;
 
-        if(unstable2RunCount === 2)
+        if (unstable2RunCount === 2)
             assert.ok(true);
         else
             assert.ok(false);

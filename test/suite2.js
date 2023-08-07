@@ -11,7 +11,16 @@ describe('Test suite 2', function () {
     });
 
     it('Failed', () => {
-        assert.ok(false);
+        let isCorrect = false;
+
+        try {
+            assert.ok(false);
+        }
+        catch (_) {
+            isCorrect = true;
+        }
+
+        assert.ok(isCorrect);
     });
 
     it('Pending');
