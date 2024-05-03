@@ -31,5 +31,8 @@
   "scripts": {
     "publish-please": "publish-please",
     "prepublishOnly": "publish-please guard"
+  },
+  "overrides": {
+    "lodash": "^4.17.21"
   }
 }
